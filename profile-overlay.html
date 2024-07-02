@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 479px)" href="mobile.css">
+    <title>Appsala</title>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+        <img src="images/logo.png" alt="logo">
+       
+        <div class="nav-items">
+          <img src="images/mobile-logo.png" alt="mobile-logo">
+            <!-- <ul>
+                <li><a href="">Categories</a></li>
+                <li><a href="">Blogs</a></li>
+            </ul> -->
+            <input type="text" name="" id="nav-input" placeholder="Enter Product, Software , Service">
+            
+            <div>
+              <input id="menu-toggle" type="checkbox" />
+              <label class='menu-button-container' for="menu-toggle">
+              <div class='menu-button'></div>
+            </label>
+            </div>
+            <div class="button-div">
+                <!-- <button class="btn btn-light">Login</button> -->
+                <button class="btn btn-dark">Logout</button>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="overlay">
+<div class="side-bar">
+    <div class="side-bar-container">
+        <div class="side-bar-items">
+        <div class="side-bar-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M35.5556 4.44444V8.88889H26.6667V4.44444H35.5556ZM13.3333 4.44444V17.7778H4.44444V4.44444H13.3333ZM35.5556 22.2222V35.5556H26.6667V22.2222H35.5556ZM13.3333 31.1111V35.5556H4.44444V31.1111H13.3333ZM40 0H22.2222V13.3333H40V0ZM17.7778 0H0V22.2222H17.7778V0ZM40 17.7778H22.2222V40H40V17.7778ZM17.7778 26.6667H0V40H17.7778V26.6667Z" fill="#757575"/>
+              </svg>
+            <p>Dashboard</p>
+        </div>
+        <div class="side-bar-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path d="M11.1 35.25C13.2 33.7833 15.2833 32.6583 17.35 31.875C19.4167 31.0917 21.6333 30.7 24 30.7C26.3667 30.7 28.5917 31.0917 30.675 31.875C32.7583 32.6583 34.85 33.7833 36.95 35.25C38.4167 33.45 39.4583 31.6333 40.075 29.8C40.6917 27.9667 41 26.0333 41 24C41 19.1667 39.375 15.125 36.125 11.875C32.875 8.625 28.8333 7 24 7C19.1667 7 15.125 8.625 11.875 11.875C8.625 15.125 7 19.1667 7 24C7 26.0333 7.31667 27.9667 7.95 29.8C8.58333 31.6333 9.63333 33.45 11.1 35.25ZM23.9907 25.5C22.0636 25.5 20.4417 24.8386 19.125 23.5157C17.8083 22.1928 17.15 20.5678 17.15 18.6407C17.15 16.7136 17.8114 15.0917 19.1343 13.775C20.4572 12.4583 22.0822 11.8 24.0093 11.8C25.9364 11.8 27.5583 12.4614 28.875 13.7843C30.1917 15.1072 30.85 16.7322 30.85 18.6593C30.85 20.5864 30.1886 22.2083 28.8657 23.525C27.5428 24.8417 25.9178 25.5 23.9907 25.5ZM24.0234 44C21.2745 44 18.6833 43.475 16.25 42.425C13.8167 41.375 11.6917 39.9417 9.875 38.125C8.05833 36.3083 6.625 34.1872 5.575 31.7617C4.525 29.3362 4 26.7445 4 23.9867C4 21.2289 4.525 18.6417 5.575 16.225C6.625 13.8083 8.05833 11.6917 9.875 9.875C11.6917 8.05833 13.8128 6.625 16.2383 5.575C18.6638 4.525 21.2555 4 24.0133 4C26.7711 4 29.3583 4.525 31.775 5.575C34.1917 6.625 36.3083 8.05833 38.125 9.875C39.9417 11.6917 41.375 13.8089 42.425 16.2266C43.475 18.6443 44 21.2277 44 23.9766C44 26.7255 43.475 29.3167 42.425 31.75C41.375 34.1833 39.9417 36.3083 38.125 38.125C36.3083 39.9417 34.1911 41.375 31.7734 42.425C29.3557 43.475 26.7723 44 24.0234 44ZM24 41C25.8333 41 27.625 40.7333 29.375 40.2C31.125 39.6667 32.85 38.7333 34.55 37.4C32.85 36.2 31.1167 35.2833 29.35 34.65C27.5833 34.0167 25.8 33.7 24 33.7C22.2 33.7 20.4167 34.0167 18.65 34.65C16.8833 35.2833 15.15 36.2 13.45 37.4C15.15 38.7333 16.875 39.6667 18.625 40.2C20.375 40.7333 22.1667 41 24 41ZM24 22.5C25.1333 22.5 26.0583 22.1417 26.775 21.425C27.4917 20.7083 27.85 19.7833 27.85 18.65C27.85 17.5167 27.4917 16.5917 26.775 15.875C26.0583 15.1583 25.1333 14.8 24 14.8C22.8667 14.8 21.9417 15.1583 21.225 15.875C20.5083 16.5917 20.15 17.5167 20.15 18.65C20.15 19.7833 20.5083 20.7083 21.225 21.425C21.9417 22.1417 22.8667 22.5 24 22.5Z" fill="#F11A7B"/>
+              </svg>
+            <p>Profile</p>
+        </div>
+        <div class="side-bar-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <g clip-path="url(#clip0_2689_35347)">
+                  <path d="M20.18 31.18L23 34L33 24L23 14L20.18 16.82L25.34 22H6V26H25.34L20.18 31.18ZM38 6H10C7.78 6 6 7.8 6 10V18H10V10H38V38H10V30H6V38C6 40.2 7.78 42 10 42H38C40.2 42 42 40.2 42 38V10C42 7.8 40.2 6 38 6Z" fill="#757575"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_2689_35347">
+                    <rect width="48" height="48" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            <p>Logout</p>
+        </div>       
+        </div>
+    </div>
+</div>
+
+
+<section class="dashboard-main">
+    <h2>My Profile</h2>
+    <form action="" class="profile-name-email">
+        <div >
+            <div class="flex">
+            <label for="">Name</label>
+            <div>
+                <input type="text" placeholder="Rafi">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_2689_35182)">
+                      <path d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z" fill="#F11A7B"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2689_35182">
+                        <rect width="24" height="24" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+            </div>
+        </div>
+        <div class="flex">
+            <label for="">Email</label>
+            <div>
+                <input type="email" placeholder="Rafi@mail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_2689_35182)">
+                      <path d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z" fill="#F11A7B"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2689_35182">
+                        <rect width="24" height="24" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+            </div>
+        </div>
+        </div>
+        <div class="btn btn-dark">Update</div>
+    </form>
+
+
+    <form action="" class="profile-password">
+        
+    <h3>Update Password</h3>
+        <div class="form-div">
+            <div>
+
+           
+            <label for="">Password</label>
+            <div>
+                <input type="password" placeholder="google@786">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_2689_35192)">
+                      <path d="M12 6.5C15.79 6.5 19.17 8.63 20.82 12C19.17 15.37 15.8 17.5 12 17.5C8.2 17.5 4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5ZM12 9.5C13.38 9.5 14.5 10.62 14.5 12C14.5 13.38 13.38 14.5 12 14.5C10.62 14.5 9.5 13.38 9.5 12C9.5 10.62 10.62 9.5 12 9.5ZM12 7.5C9.52 7.5 7.5 9.52 7.5 12C7.5 14.48 9.52 16.5 12 16.5C14.48 16.5 16.5 14.48 16.5 12C16.5 9.52 14.48 7.5 12 7.5Z" fill="#F11A7B"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2689_35192">
+                        <rect width="24" height="24" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+            </div>
+        </div>
+        <div>
+            <label for="">New Password</label>
+            <div>
+                <input type="password" placeholder="google@786">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_2689_35192)">
+                      <path d="M12 6.5C15.79 6.5 19.17 8.63 20.82 12C19.17 15.37 15.8 17.5 12 17.5C8.2 17.5 4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5ZM12 9.5C13.38 9.5 14.5 10.62 14.5 12C14.5 13.38 13.38 14.5 12 14.5C10.62 14.5 9.5 13.38 9.5 12C9.5 10.62 10.62 9.5 12 9.5ZM12 7.5C9.52 7.5 7.5 9.52 7.5 12C7.5 14.48 9.52 16.5 12 16.5C14.48 16.5 16.5 14.48 16.5 12C16.5 9.52 14.48 7.5 12 7.5Z" fill="#F11A7B"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2689_35192">
+                        <rect width="24" height="24" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+            </div>
+        </div>
+        <div>
+            <label for="">New Password</label>
+            <div>
+                <input type="password" placeholder="google@786">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_2689_35192)">
+                      <path d="M12 6.5C15.79 6.5 19.17 8.63 20.82 12C19.17 15.37 15.8 17.5 12 17.5C8.2 17.5 4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5ZM12 9.5C13.38 9.5 14.5 10.62 14.5 12C14.5 13.38 13.38 14.5 12 14.5C10.62 14.5 9.5 13.38 9.5 12C9.5 10.62 10.62 9.5 12 9.5ZM12 7.5C9.52 7.5 7.5 9.52 7.5 12C7.5 14.48 9.52 16.5 12 16.5C14.48 16.5 16.5 14.48 16.5 12C16.5 9.52 14.48 7.5 12 7.5Z" fill="#F11A7B"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2689_35192">
+                        <rect width="24" height="24" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+            </div>
+        </div>
+    </div>
+        <div class="btn btn-dark">Update Password</div>
+    </form>
+</section>
+</div>
+<div class="profile-overlay overlay-card">
+    <h2>Reset Password</h2>
+    <p>We will send a password reset email to your email address at <span style="color: #F11A7B;">tamrafi@gmail.com</span></p>
+    <div class="line"></div>
+     <div class="button-div">
+        <button class="btn btn-light">Cancel</button>
+        <button class="btn btn-dark">Confirm</button>
+     </div>
+    </div>
+
+
+
+</body>
+</html>
