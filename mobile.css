@@ -45,11 +45,13 @@
   object-fit: cover;
   border-radius: 20px;
 }
-.featured-blog .blog-type{
-  font-size: 12px;
+/* .featured-blog .blog-type{
+  font-size: 16px;
+} */
+
+.top-reviews h1{
+  font-size: 30px;
 }
-
-
 .blog-card .author-info .flex{
   margin: 0;
   margin-top: -1rem;
@@ -73,7 +75,7 @@
   width: 90%;
 }
 .featured-blog .blog-title, .blogs-grid .blog-card .blog-title{
-  font-size: 16px;
+  font-size: 22px;
   width: 98%;
 }
 .articles .bar{
@@ -105,7 +107,7 @@
   margin-bottom: 0;
 }
 .image-title .author-info p,.image-title .less-line p,.blog-hero-card p {
-  font-size: 14px;
+  font-size: 16px;
 }
 .image-title .author-info img{
   height: 40px;
@@ -789,7 +791,7 @@ border: 1px solid #ECECEC;
 .mobile-overlay-card .selected-item{
   background-color: #F11A7B;
   color: white;
-  padding: 12px 73%;
+  padding: 12px 50%;
 }
 
 .card-open img[alt='star']{
