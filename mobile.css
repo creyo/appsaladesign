@@ -62,7 +62,7 @@
   width: 98%;
 }
 .blogs-grid .blog-card p{
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .navigator{
@@ -105,7 +105,7 @@
   margin-bottom: 0;
 }
 .image-title .author-info p,.image-title .less-line p,.blog-hero-card p {
-  font-size: 12px;
+  font-size: 14px;
 }
 .image-title .author-info img{
   height: 40px;
