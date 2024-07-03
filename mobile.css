@@ -145,6 +145,8 @@
 }
   .nav-items input{
     background-color: white;
+    min-width: 0;
+    max-width: 100%;
 }
 .nav-items img[alt='mobile-logo']{
   height: 30px;
@@ -162,14 +164,16 @@
   .popular-apps{
     padding-left: 2.5rem;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
     grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
   .heading{
     font-size: 14px;
   }
-  .home-image{
+  .home-image {
     height: 200px;
+    min-width: 0;
+    max-width: 100%;
 }
 
 .home-para{
@@ -217,6 +221,8 @@ footer h2{
 
 .before-footer-image{
   height: 200px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .home-before-footer h1{
@@ -364,9 +370,15 @@ footer h2{
 .product-page-card{
   border: 1px solid #EBEBEB;
   border-radius: 5px;
-  padding: 1rem;
+  padding: 10px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
+}
+
+
+.product-page-card>*{
+  width: 95%;
 }
 .profile-name-email{
   width: 80%;
@@ -396,9 +408,9 @@ footer h2{
   display: block;
   border: none;
   color: #454545;
-  position: relative;
+  /* position: relative;
   top: -10px;
-  right: -30px;
+  right: -30px; */
 }
 
 .rating-comment{
@@ -445,7 +457,6 @@ img[alt="logo"], .desktop{
   display: block;
   display: flex;
   align-items: flex-start;
-  margin-left: 3.5rem;
 }
 .mobile-globe-save>*{
   margin-right: 10px;
@@ -455,6 +466,8 @@ img[alt="logo"], .desktop{
 .product-page-image{
   height: 135px;
   margin-top: 10px;
+  max-width: 100%;
+  min-width: 0;
 }
 .product-page-ques-ans{
   display: none;
@@ -589,14 +602,18 @@ background: #F11A7B;
   flex-direction: column;
   align-items: flex-start;
 }
-.login-component img[alt='appsala']{
-  margin-left: 5rem;
+
+.login-component,
+.hurry-up-component {
+  max-width: 90%;
+  min-width: 0;
 }
 .login-register-form{
   align-self: flex-start;
+  width: 100%;
 }
 .login-register-form input{
-width: 400px;
+  width: 100%;
 margin-top: 10px;
 border-radius: 7px;
 border: 1px solid #ECECEC;
@@ -707,7 +724,6 @@ border: 1px solid #ECECEC;
 }
 .mobile-sidebar{
   width: 70%;
-  height: 100vh;
   background-color: #FFF;
   display: flex;
   flex-direction: column;
@@ -754,10 +770,13 @@ border: 1px solid #ECECEC;
   color: #454545;
   position: absolute;
     top: 7rem;
-    left: 2rem;
-    width: 180px;
-    height: 210px;
-    padding: 0rem 6rem;
+    left: 16vw;
+    right: 16vw;
+    max-width: 280px;
+    max-height: 100%;
+    min-height: 0;
+    margin: 10px;
+    padding: 0rem 3rem;
 }
 
 .mobile-overlay-card{
@@ -770,8 +789,7 @@ border: 1px solid #ECECEC;
 .mobile-overlay-card .selected-item{
   background-color: #F11A7B;
   color: white;
-  padding: 12px 100%;
-  border-radius:  10px 10px 0px 0px;
+  padding: 12px 73%;
 }
 
 .card-open img[alt='star']{
@@ -834,6 +852,27 @@ border: 1px solid #ECECEC;
   align-self: flex-start;
 }
 
+.product-card-left>*{
+  margin-left: 10px;
+}
+.product-card-left img[alt="product-image"] {
+  margin-right: 0;
+  max-width: 100%;
+  min-width: 0;
+}
+.card-left-div{
+  max-width: 100%;
+  min-width: 0;
+}
+
+.card-left-div .dark-text{
+  font-size: 1rem;
+}
+.card-left-div .stars img,
+.product-card-right .stars img{
+  max-width: 100%;
+  min-width: 0;
+}
 .card-open .comments svg{
   margin-right: 10px;
 }
