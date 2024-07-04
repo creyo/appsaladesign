@@ -157,10 +157,10 @@
     font-size: 36px !important;
   }
   .header-para{
-    font-size: 14px;
+    font-size: 16px;
   }
   .header-search::placeholder {
-    font-size:9px;
+    font-size:12px;
     background-size: 9px 9px;
   }
   .popular-apps{
@@ -170,7 +170,7 @@
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
   .heading{
-    font-size: 14px;
+    font-size: 18px;
   }
   .home-image {
     height: 200px;
@@ -179,14 +179,14 @@
 }
 
 .home-para{
-  font-size: 12px;
+  font-size: 16px;
   max-width: 70%;
 }
 .blog-list p{ 
-  font-size: 12px;
+  font-size: 16px;
 }
 .blog-list h2{
-  font-size: 14px;
+  font-size: 20px;
 }
 .blog-list{
   margin-top: 3rem;
@@ -198,7 +198,7 @@
   margin-top: 1rem;
 }
 .home-flex p{
-  font-size: 12px;
+  font-size: 14px;
 }
 .footer-inner{
   display: grid;
@@ -212,10 +212,10 @@ footer{
 }
 
 footer p, footer a{
-  font-size: 12px;
+  font-size: 16px;
 }
 footer h2{
-  font-size: 14px;
+  font-size: 20px;
 }
 .home-before-footer{
   height: 100%;
@@ -232,7 +232,7 @@ footer h2{
 }
 
 .home-before-footer p{
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .home-before-footer img[alt="tick"]{
@@ -292,7 +292,7 @@ footer h2{
 }
 
 .bar p{
-  font-size: 10px;
+  font-size: 12px;
   width: 90%;
 }
 
@@ -322,6 +322,10 @@ footer h2{
 
 .reviews-card{
   margin-left: 0;
+}
+
+.review{
+  padding: 1rem;
 }
 
 .footer-first{
@@ -416,7 +420,7 @@ footer h2{
 }
 
 .rating-comment{
-  font-size: 14px;
+  font-size: 14px !important;
 }
 
 .product-card{
@@ -508,7 +512,7 @@ img[alt="logo"], .desktop{
 }
 
 .filter-item{
-  padding: 10px 15px; 
+  padding: 5px 10px;
   font-size: 12px;
   border-radius: 10px;
 }
@@ -544,7 +548,7 @@ background: #F11A7B;
 }
 
 .dashboard-page-card .description{
-  font-size: 12px;
+  font-size: 16px;
 }
 .dashboard-page-card .rating-comment,.f-12{
   font-size: 12px;
@@ -566,6 +570,8 @@ background: #F11A7B;
 
 .desktop-none .card-heading{
   margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .overlay{
   display: none;
@@ -868,7 +874,7 @@ border: 1px solid #ECECEC;
 }
 
 .card-left-div .dark-text{
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .card-left-div .stars img,
 .product-card-right .stars img{
