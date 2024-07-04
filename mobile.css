@@ -419,6 +419,9 @@ footer h2{
   right: -30px; */
 }
 
+.sidebar-2{
+  height: 100vh;
+}
 .rating-comment{
   font-size: 14px !important;
 }
