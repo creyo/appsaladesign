@@ -635,7 +635,8 @@ footer{
 .rating p{
    margin-top: 22px;
 }
-.rating-comment>*{
+.rating-comment>*,
+.subscription-details>*{
     margin-right: 1.5rem;
 }
 .rating p, .comments img{

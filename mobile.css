@@ -422,15 +422,31 @@ footer h2{
 .sidebar-2{
   height: 100vh;
 }
-.rating-comment{
+.rating-comment,
+.subscription-details{
   font-size: 14px !important;
 }
 
 .product-card{
   margin:2rem 10px;
 }
-
-.rating-comment>*{
+.unsubscribe-edit{
+  position: static;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.subscription-details{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+/* .subscription-details > .flex:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  text-align: center;
+} */
+.rating-comment>* ,
+.subscription-details>*{
   margin-right: 1rem;
 }
 .rating p, .comments img{
