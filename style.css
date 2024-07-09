@@ -785,6 +785,7 @@ background: #F11A7B;
     border: 1px solid #EBEBEB;
     padding: 1rem;
     margin: 2rem 2rem 2rem 0;
+    position: relative;
 }
 
 .dashboard-page-card .description{
@@ -940,6 +941,13 @@ background: #F11A7B;
     border-radius: 4px;
     padding: 5px 10px;
 }
+.subscription-form input[type='text']{
+    width: 50%;
+}
+.subscription-form input[type='checkbox']::before{
+    top: -8px !important;
+    left: -3px !important;
+}
 .hurry-up{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1091,3 +1099,45 @@ height: 40px;
 .navigator>*{
     margin: 0 1rem;
 }
+.unsubscribe-edit{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.unsubscribe-edit svg{
+    height: 15px;
+}
+.dashboard-card-check-box input[type='checkbox']{
+    appearance: none;
+    border:  2px solid #F11A7B;
+    background-color: white;
+    z-index: 0;
+    width: 12px;
+    height: 12px;
+    
+  }
+  .dashboard-card-check-box input[type='checkbox']::before{
+    position: absolute;
+    content: '\2713';
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 12px;
+    color: #00A82D;
+    transform: scale(0);
+    transition: 0.3s all ease-in-out;
+    top: -4px;
+    left: 2px;
+    z-index: 1;
+    position: relative;
+  }
+  
+  
+  .dashboard-card-check-box input[type='checkbox']:checked::before{
+    transform: scale(1);
+    z-index: 1;
+  }
+  
+  
+  .dashboard-card-check-box input[type='checkbox']:checked {
+    border:  2px solid #F11A7B;
+  }
